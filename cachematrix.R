@@ -28,7 +28,8 @@ cacheinverse <- function(x, ...) {
     # If empty, calculation is done here 
     inv_matrix <- x$get()
     inv <- solve(inv_matrix, ...)
-    # using setinverse function, this command line sets the value of the inverse in the cache     
+    # Using setinverse function, this command line sets the value of the inverse in the cache     
     x$setinverse(inv)
+    # Return the cache inverse
     inv
 }
